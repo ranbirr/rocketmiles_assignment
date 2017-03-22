@@ -1,0 +1,27 @@
+Here are the some of the scenarios that I belive should be tested:
+
+    - Initial signup: make sure user is able to create an account or use Facebook to signup
+    - From the signup/in link, make sure user is able to either create a new account, or use an existing one to signin
+    - If user is logged in, make sure correct user info is shown. If they sign out, make sure, they can sign back in successfully.
+    - Check to see whether or not user is able to use the "contact us" link to leave feedback (ensure it is sent to correct location)
+    - For the different currency/language options, make sure page is updated correctly and contains the correct unit as well as making sure translations are done correctly
+    - After completing a valid search:
+        - If hotel reviews are noted, ensure they match what is expected (hotels shouldn't be rated higher/lower than what is expected)
+        - Check to see if UI matches what is expected (layout of the page)
+        - Ensure reward program logo at top matches that of the program user has selected
+        - Check again to see if currency units are updated correctly if user changes it, as well as translation for the page
+        - From the varius sort options, make sure list of hotels is updated accordingly
+    - After choosing a hotel:
+        - Check to see if UI matches what is expected (layout of the page)
+        - Ensure rooms, guests, checkin/out dates match what user selected
+        - If hotel description is saved, ensure that it matches desired text as well as which promo images are used
+    - After attemping to book a hotel:
+        - Ensure no errors are seen (Unfortunately, availability of this room changed when we reached out to finalize the reservation. We're sorry, and have alerted our systems team as well as our hotel partners to investigate. Please select a different hotel.)
+        - If user is not logged in, make sure they are told to log in, and enter their reward account
+        - After hitting confirm, ensure that hotel was booked successfully
+
+Most of these have other functionalities that can be tested. If a user goes back/forward in their browser, need to make sure correct forms are shown, hotels are updated if booked within that time period, etc. When selecting dates, I noticed I would sometimes see a message regarding rooms no longer being available, so it's good to make sure user cannot book an already booked room. If a user refreshes the page at any point during the search, also need to ensure prices/availability are updated accordingly as to see the most recent data. This could also work with if a user waits too long on a page (user has a hotel, but they step away for a small/long period of time), have to make sure user is redirected/updated with the most recent data (should not be seeing old prices/availability). 
+
+Most of these scenarios should be tested across a variety of browsers/OSs. Easiest would be to get the most used browsers/OSs and ensure functionality is working for these. For older browsers/OSs, it is also important to test all the scenarios, but maybe put a notice that certain features may not work. Can also test the mobile sites on iOS/Android with different versions as some people may choose to look through that, rather than the app so should be able to go through the site and be able to book hotels as well.
+
+One scenario I wanted to check but couldn't quite get to work was selecting locations from the drop down and ensuring that the text matches what the user has selected. It could be they are cycling through all the options so it'd be nice if the text matches what the user selected.
